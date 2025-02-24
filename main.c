@@ -15,16 +15,18 @@ int main()
 
     printf("\n");
     // Loop to generate rows
-    for (int row = 1; row <= size; row++)
+    for (int row = 0; row < size; row++)
     {
         // Loop to generate columns
-        for (int column = 1; column <= size; column++)
+        for (int column = 0; column < size; column++)
         {
             // Store the value of the multiplication in the array
-            table_values[row][column] = row * column;
+            table_values[row][column] = (row + 1) * (column + 1);
             printf("%3d ", table_values[row][column]);
         }
         printf("\n");
     }
     printf("\n");
+
+    return 0;
 }
