@@ -13,6 +13,7 @@ int main()
     // Declaring 2D array to store the values of the table
     int table_values[size][size];
 
+    printf("\n");
     // Loop to generate rows
     for (int row = 1; row <= size; row++)
     {
@@ -25,4 +26,5 @@ int main()
         }
         printf("\n");
     }
+    printf("\n");
 }
